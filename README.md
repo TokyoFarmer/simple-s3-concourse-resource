@@ -8,6 +8,7 @@ A Concourse CI resource to get latest files in a s3 bucket.
 * `filter`: grep format to filter out files
 * `aws_access_key_id`: AWS access Key ID
 * `aws_secret_access_key`: Aws secret access key
+* `aws_session_token`: Aws session token
 * `aws_default_region`: aws region
 
 ## Example

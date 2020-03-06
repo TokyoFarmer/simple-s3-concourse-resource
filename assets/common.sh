@@ -8,5 +8,6 @@ parse_source_config() {
   export AWS_ACCESS_KEY_ID=$(jq -r '.source.aws_access_key_id // ""' $payload)
   export AWS_SECRET_ACCESS_KEY=$(jq -r '.source.aws_secret_access_key// ""' $payload)
   export AWS_DEFAULT_REGION=$(jq -r '.source.aws_default_region // "us-east-1"' $payload)
+  export AWS_SESSION_TOKEN=$(jq -r '.source.aws_session_token// ""' $payload)
   VERSION=$(jq -r '.version.ref // ""' $payload)
 }
